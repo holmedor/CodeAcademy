@@ -13,16 +13,7 @@
         android:theme="@style/Theme.CodeAcademy"
         tools:targetApi="31">
         <activity
-            android:name=".ContactoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CursosActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ClientesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +26,15 @@
             android:exported="false" />
         <activity
             android:name=".QuienesSomosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CursosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClientesActivity"
             android:exported="false" />
     </application>
 
