@@ -48,8 +48,20 @@ public class CursosActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }*/
         int itemId = item.getItemId();
+        if (itemId == R.id.mnuItemQuienesSomos) {
+            startActivity(new Intent(this, QuienesSomosActivity.class));
+        }
+        if (itemId == R.id.mnuItemCursos) {
+            startActivity(new Intent(this, CursosActivity.class));
+        }
+        if (itemId == R.id.mnuItemContacto) {
+            startActivity(new Intent(this, ContactoActivity.class));
+        }
         if (itemId == R.id.mnuItemClientes) {
             startActivity(new Intent(this, ClientesActivity.class));
+        }
+        if (itemId == R.id.mnuItemInicio) {
+            startActivity(new Intent(this, MainActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }

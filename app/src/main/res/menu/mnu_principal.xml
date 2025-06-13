@@ -3,6 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
   <item
+      android:id="@+id/mnuItemQuienesSomos"
+      android:title="Quienes Somos" />
+  <item
+      android:id="@+id/mnuItemCursos"
+      android:title="Cursos" />
+  <item
+      android:id="@+id/mnuItemContacto"
+      android:title="Contacto" />
+  <item
       android:id="@+id/mnuItemClientes"
       android:title="Clientes" />
+  <item
+      android:id="@+id/mnuItemInicio"
+      android:title="INICIO" />
 </menu>
