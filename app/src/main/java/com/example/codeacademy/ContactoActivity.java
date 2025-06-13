@@ -1,6 +1,10 @@
 package com.example.codeacademy;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,5 +27,30 @@ public class ContactoActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    //AÑADE EL MENU
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.mnu_principal, menu);
+        return true;
+    }
+
+    //GESTIONA EL CLICK EN EL MENU
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        /*switch(item.getItemId())
+        {
+            case R.id.mnuItemClientes:
+                startActivity(new Intent(this, ClientesActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }*/
+        int itemId = item.getItemId();
+        if (itemId == R.id.mnuItemClientes) {
+            startActivity(new Intent(this, ClientesActivity.class));
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
